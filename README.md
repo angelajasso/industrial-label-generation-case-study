@@ -2,7 +2,7 @@
 
 A web application developed to automate the large-scale generation of labels used in industrial cargo straps.
 
-The system allows users to create customized labels with client logos, load capacity specifications, and sequential serial numbers, ready to be exported as PDF files and printed.
+The system allows users to create customized labels with load capacity specifications, and sequential serial numbers, ready to be exported as PDF files and printed.
 
 ---
 
@@ -10,7 +10,7 @@ The system allows users to create customized labels with client logos, load capa
 
 This project originated from a real business need within a small company that manufactures cargo straps.
 
-Previously, labels were created manually using Paint. When a customer requested hundreds of labels with unique serial numbers, the process became time-consuming, repetitive, and prone to errors.
+Previously, labels were created manually. When a customer requested hundreds of labels with unique serial numbers, the process became time-consuming, repetitive, and prone to errors.
 
 To address this challenge, a tool was developed to automate label generation and streamline the preparation of high-volume orders.
 
@@ -29,12 +29,22 @@ While this approach worked for small orders, it became inefficient when hundreds
 
 ---
 
+## 📋 Business Requirements
+
+The client needed a solution capable of:
+
+- Generating labels in bulk.
+- Managing sequential serial numbers.
+- Producing print-ready files.
+- Reducing repetitive manual work.
+
+---
+
 ## 💡 Solution
 
 The application allows users to:
 
 - Enter customer information.
-- Upload custom client logos.
 - Configure load capacity specifications.
 - Define serial number ranges.
 - Generate labels automatically.
@@ -64,12 +74,12 @@ Generated labels can be exported as PDF files ready for printing and production.
 
 ---
 
-## ⚙️ Production Requirements
+## ⚙️ Design Constraints
 
-The label layout was designed according to real manufacturing constraints.
+The solution was designed around real manufacturing requirements.
 
-- Label dimensions were defined in centimeters to match production specifications.
-- A dedicated stitching margin was intentionally included to allow labels to be sewn onto industrial cargo straps.
+- Label dimensions were defined in centimeters.
+- A stitching margin was intentionally included to allow labels to be sewn onto cargo straps.
 - Each label contains a unique serial number for identification and traceability.
 - The generated PDF is optimized for printing and batch production.
 
@@ -79,7 +89,6 @@ The label layout was designed according to real manufacturing constraints.
 
 - Bulk label generation.
 - Automatic serial number sequencing.
-- Customer-specific customization.
 - QR code generation.
 - PDF export.
 - Web-based interface accessible from multiple devices.
